@@ -1,8 +1,9 @@
 class DNA {
 
-  constructor() {
+  constructor(mutationRate) {
     this.genetics = []
     this.fitness = 0
+    this.mutationRate = mutationRate
 
     // fill the genes with random numbers 
     for (let i = 0; i < digits; i++) {
@@ -22,7 +23,7 @@ class DNA {
   crossover(partner) {
     // breed two cells by merging the genes from each parent at a certain midpoint
     let midpoint = floor(random(this.genetics.length))
-    let child = new DNA()
+    let child = new DNA(this.mutationRate)
 
     for (let i = 0; i < digits; i++) {
       if (i < midpoint)
@@ -37,7 +38,7 @@ class DNA {
   mutate() {
     // mutate the gene depending on the mutation rate
     for (let i = 0; i < digits; i++) {
-      if (random(1) < 0.01) {
+      if (random(1) < this.mutationRate) {
         this.genetics[i] = floor(random(10))
       }
     }

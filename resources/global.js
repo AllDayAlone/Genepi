@@ -1,6 +1,3 @@
-// number of elements in the population
-let N = 100
-
 // pi - the target to evolve into used only in the fitness function
 let pi = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 9]
 
@@ -15,3 +12,9 @@ let display
 
 // whether the algorithm is progressing or has completed
 let result
+
+// controls the amount of population
+var populationSlider
+
+// controls the mutation rate
+var mutationRateSlider

@@ -3,6 +3,26 @@ body
   font-family: 'roboto mono', monospace;
 
   background-color: #111;
+  
+  margin-left: 5%;
+}
+
+p
+{
+  margin: 25px 0;
+}
+
+button
+{
+  font-family: 'roboto mono', monospace;
+  color: #fff;
+  font-size: 20pt;
+  background-color: #555;
+
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 20px 0 5px;
 }
 
 #display,
@@ -11,15 +31,16 @@ body
 {
   font-size: 30pt;
 
-  margin-left: 5%;
-
   color: #fff;
 }
 
 .information
 {
+  display: flex;
+  justify-content: space-between;
+
+  width: 330px;
   margin-right: -3%;
-  margin-left: 5%;
 
   color: white;
 }
@@ -32,7 +53,6 @@ body
   width: 20%;
   min-width: 200px;
   height: 200px;
-  margin-left: 5%;
 
   color: white;
 }
@@ -45,7 +65,6 @@ body
   width: 20%;
   min-width: 200px;
   height: 200px;
-  margin-left: 5%;
 
   color: white;
 }
